@@ -1,0 +1,223 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>My Website</title>
+  <meta name="description" content="Personal website" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <!-- Top bar -->
+  <header class="topbar">
+    <div class="container topbar__inner">
+      <a class="brand" href="#">
+        <span class="brand__dot"></span>
+        <span class="brand__name">Your Name</span>
+      </a>
+
+      <button class="menuBtn" id="menuBtn" aria-label="Open menu">☰</button>
+
+      <nav class="nav" id="nav">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#work">Work</a>
+        <a href="#contact" class="btn btn--small">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <main id="home" class="hero">
+    <div class="container hero__grid">
+      <div class="hero__text">
+        <p class="chip">🚀 Modern • Clean • Fast</p>
+        <h1>Build a strong online page that looks professional.</h1>
+        <p class="lead">
+          This is your personal website. Add your story, your videos, your projects, and your contact.
+        </p>
+
+        <div class="hero__actions">
+          <a class="btn" href="#work">See my work</a>
+          <a class="btn btn--ghost" href="#contact">Get in touch</a>
+        </div>
+
+        <div class="stats">
+          <div class="stat">
+            <div class="stat__num">10+</div>
+            <div class="stat__txt">Projects</div>
+          </div>
+          <div class="stat">
+            <div class="stat__num">100%</div>
+            <div class="stat__txt">Mobile friendly</div>
+          </div>
+          <div class="stat">
+            <div class="stat__num">Fast</div>
+            <div class="stat__txt">Simple code</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero__card">
+        <div class="card">
+          <div class="card__top">
+            <div class="avatar">👤</div>
+            <div>
+              <h3>Your Name</h3>
+              <p class="muted">Creator • Builder • Mechanic</p>
+            </div>
+          </div>
+
+          <div class="card__mid">
+            <p class="muted">Quick bio</p>
+            <p>
+              I create content and projects. I love building things and sharing the process.
+            </p>
+          </div>
+
+          <div class="card__buttons">
+            <a class="pill" href="#">YouTube</a>
+            <a class="pill" href="#">Facebook</a>
+            <a class="pill" href="#">TikTok</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- About -->
+  <section id="about" class="section">
+    <div class="container">
+      <div class="section__head">
+        <h2>About me</h2>
+        <p class="muted">A short intro that builds trust.</p>
+      </div>
+
+      <div class="grid2">
+        <div class="panel">
+          <h3>What I do</h3>
+          <p>
+            Write 3–5 lines about your work, your passion, and what people will find on this website.
+          </p>
+          <ul class="list">
+            <li>✅ High-quality content</li>
+            <li>✅ Clean and simple design</li>
+            <li>✅ Easy to update anytime</li>
+          </ul>
+        </div>
+
+        <div class="panel">
+          <h3>Skills</h3>
+          <div class="tags">
+            <span class="tag">Content</span>
+            <span class="tag">Editing</span>
+            <span class="tag">Mechanics</span>
+            <span class="tag">DIY</span>
+            <span class="tag">Design</span>
+            <span class="tag">Problem solving</span>
+          </div>
+          <div class="note">
+            Tip: keep it short. People scan fast.
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Work -->
+  <section id="work" class="section section--alt">
+    <div class="container">
+      <div class="section__head">
+        <h2>My work</h2>
+        <p class="muted">Add your projects / videos here.</p>
+      </div>
+
+      <div class="cards">
+        <article class="workCard">
+          <div class="workCard__badge">Project</div>
+          <h3>Project Title 1</h3>
+          <p class="muted">Short description about what you did and why it’s cool.</p>
+          <a class="link" href="#">View →</a>
+        </article>
+
+        <article class="workCard">
+          <div class="workCard__badge">Video</div>
+          <h3>Project Title 2</h3>
+          <p class="muted">Put your best video / post here.</p>
+          <a class="link" href="#">Watch →</a>
+        </article>
+
+        <article class="workCard">
+          <div class="workCard__badge">Brand</div>
+          <h3>Project Title 3</h3>
+          <p class="muted">Show your page name and what makes you different.</p>
+          <a class="link" href="#">Details →</a>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="section">
+    <div class="container">
+      <div class="section__head">
+        <h2>Contact</h2>
+        <p class="muted">People can reach you from here.</p>
+      </div>
+
+      <div class="contact">
+        <div class="panel">
+          <h3>Send a message</h3>
+          <form class="form" onsubmit="return false;">
+            <label>
+              Your name
+              <input type="text" placeholder="Type your name" />
+            </label>
+
+            <label>
+              Email
+              <input type="email" placeholder="name@email.com" />
+            </label>
+
+            <label>
+              Message
+              <textarea rows="4" placeholder="Write your message..."></textarea>
+            </label>
+
+            <button class="btn" type="button" onclick="toast('Message form is demo ✅ Add real backend later')">
+              Send
+            </button>
+          </form>
+        </div>
+
+        <div class="panel">
+          <h3>Links</h3>
+          <p class="muted">Add your real links:</p>
+
+          <div class="links">
+            <a class="pill pill--full" href="#">Facebook</a>
+            <a class="pill pill--full" href="#">TikTok</a>
+            <a class="pill pill--full" href="#">YouTube</a>
+            <a class="pill pill--full" href="#">Instagram</a>
+          </div>
+
+          <div class="note">
+            Want a custom domain later? You can do it.
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container footer__inner">
+      <p class="muted">© <span id="year"></span> Your Name. All rights reserved.</p>
+      <a class="link" href="#home">Back to top ↑</a>
+    </div>
+  </footer>
+
+  <div class="toast" id="toast"></div>
+  <script src="script.js"></script>
+</body>
+</html>
